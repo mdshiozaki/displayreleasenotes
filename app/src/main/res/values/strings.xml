@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DisplayReleaseNotes</string>
+    <string name="display_button">Display Notes</string>
+</resources>

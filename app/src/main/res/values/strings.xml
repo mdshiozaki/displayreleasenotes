@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DisplayReleaseNotes</string>
     <string name="display_button">Display Notes</string>
+    <string name="input_notes">Paste release notes here</string>
 </resources>

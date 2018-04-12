@@ -34,7 +34,7 @@ public class DisplayReleaseNotes extends AppCompatActivity {
                 i.putExtra("notes", noteView.getText().toString());
                 setResult(RESULT_OK, i);
 
-                NavUtils.navigateUpFromSameTask(this);
+                onBackPressed();
                 return true;
 
             default:

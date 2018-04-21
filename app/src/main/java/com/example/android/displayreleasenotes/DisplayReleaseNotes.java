@@ -1,9 +1,11 @@
 package com.example.android.displayreleasenotes;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -23,7 +25,13 @@ public class DisplayReleaseNotes extends AppCompatActivity {
 
         noteView = (TextView) findViewById(R.id.noteView);
         noteView.setMovementMethod(new ScrollingMovementMethod());
-        noteView.setText(notes);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            noteView.setText(Html.fromHtml(notes, Html.FROM_HTML_MODE_COMPACT));
+        }else {
+            noteView.setText(Html.fromHtml(notes));
+        }
+
     }
 
     @Override

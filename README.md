@@ -1,5 +1,5 @@
 # displayreleasenotes
-App to display release notes on an android device.
+App to display release notes on an android device. Created while at North to review app release notes during QA testing of release builds.
 
 Instructions:
 Copy and paste the release notes into the text box and press "display notes" to view them. 
